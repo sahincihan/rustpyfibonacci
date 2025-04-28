@@ -7,11 +7,15 @@
     Learn more under: https://pyscaffold.org/
 """
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 if __name__ == "__main__":
     try:
-        setup(use_scm_version={"version_scheme": "no-guess-dev"})
+        setup(
+            name="mypackage",
+            version="0.1",
+            packages=find_packages(),
+        )
     except:  # noqa
         print(
             "\n\nAn error occurred while building the project, "
