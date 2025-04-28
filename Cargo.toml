@@ -4,9 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [lib]
-name = "src/rustcode/src/fibonacci"
+name = "fibonacci"
 crate-type = ["cdylib"]
-
+path = "src/rustcode/src/lib.rs"
 
 [dependencies]
 rand = "0.9.0"
